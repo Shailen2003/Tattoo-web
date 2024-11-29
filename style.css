@@ -219,3 +219,406 @@ body {
 .contact-form button:hover {
     background-color: #333;
 }
+
+/* Services Section */
+.services-section {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.services-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.services-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.5);
+}
+
+.service-img img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+}
+
+.service-img:hover img {
+  transform: scale(1.1);
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.4);
+}
+
+.service-card h2 {
+  font-size: 1.5rem;
+  margin: 15px 0;
+}
+
+.service-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  text-align: center;
+  padding: 50px 20px;
+  /* background: url('https://via.placeholder.com/1600x900') no-repeat center/cover; */
+  background-color: #fffff;
+}
+.testimonial-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+
+.testimonials-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.testimonial-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.4);
+}
+
+.quote-icon {
+  font-size: 2rem;
+}
+
+.testimonial-content p {
+  margin: 15px 0;
+  font-size: 1rem;
+  color: #e0e0e0;
+}
+
+.testimonial-content h3 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .services-container,
+  .testimonials-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-card,
+  .testimonial-card {
+    width: 90%;
+  }
+}
+
+/* Contact Section Styling */
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    position: relative;
+}
+
+.contact-content {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-content h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact-btn {
+    background-color: #fff;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.contact-btn:hover {
+    transform: scale(1.05);
+}
+
+.contact-details {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+    gap: 20px;
+    text-align: center;
+}
+
+.contact-info,
+.contact-hours,
+.contact-location {
+    flex: 1;
+    min-width: 250px;
+}
+
+.contact-info h3,
+.contact-hours h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.contact-info p,
+.contact-hours p,
+.contact-location p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+/* Floating Buttons Styling */
+.floating-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.floating-buttons a img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.floating-buttons a img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-details {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-info,
+    .contact-hours,
+    .contact-location {
+        text-align: center;
+    }
+}
+
+footer {
+    background-color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+/* Footer Columns */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-left a,
+.footer-right a,
+.footer-center a {
+    display: block;
+    margin-bottom: 10px;
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+}
+.footer-lefts a{
+    display: block;
+    margin-bottom: 10px;
+    color: black;
+    text-decoration: none;
+    font-size: 14px;  
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-center a {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.footer-center .footer-logo {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footer-left a:hover,
+.footer-right a:hover,
+.footer-center a:hover {
+    text-decoration: underline;
+}
+
+/* Hover Effect: "Book an Appointment" */
+.hover-effect {
+    position: relative;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footer-lefts:hover a{
+    left: 0;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border: 1px solid white;
+    font-size: 14px;
+} 
+
+/* "Let's Chat" Button */
+#chat-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+#chat-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Chat Box Styles */
+#chat-box {
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    width: 300px;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.chat-header {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-body {
+    padding: 15px;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
+
+.chat-icons a {
+    margin: 10px;
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.chat-icons a:hover {
+    color: green;
+}
+
+textarea {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    resize: none;
+    font-size: 14px;
+    color: black;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #chat-box {
+        width: 90%;
+        right: 5%;
+    }
+
+    .footer-left,
+    .footer-center,
+    .footer-right {
+        margin: 10px 0;
+    }
+}
+
+.footer-logo {
+    background-color: black;
+    color: white;
+    width: 90%;
+    text-align: center;
+    align-items:center;
+    justify-content:center;
+    display: flex;
+}
