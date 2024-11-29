@@ -10,60 +10,104 @@
 </head>
 
 <body>
-          <header class="header ">
-            <div class="logo ">
-                <img src="images/logo.avif" alt="">
+    <header class="header ">
+        <div class="logo ">
+            <img src="images/logo.avif" alt="">
+        </div>
+        <div class="bttn">
+            <a href="./appointment.html" class="appointment-btn"><strong>BOOK AN APPOINTMENT</strong></a>
+        </div>
+        <nav class="navbar ">
+
+            <div class="menu-toggle " id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
-            <div class="bttn">
-                <a href="./appointment.html" class="appointment-btn"><strong>BOOK AN APPOINTMENT</strong></a>
+
+            <ul class="nav-links ">
+                <li><a href="#home">Home</a></li>
+                <li><a href="./components/about.html">About</a></li>
+                <li><a href="./components/service.html">Services</a></li>
+                <li><a href="./components/artist.html">Testimonials</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <section class="Home">
+        <div class="home-logo">
+            <img src="./images/logo.avif" alt="">
+            <h1>Till Death, We Do Art</h1>
+        </div>
+        <div class="form-container">
+            <div class="form-content">
+                <h1>Get Your Piercing at a Special Offer: It’s All About Your Passion, Your Journey!</h1>
+                <p>
+                    This version focuses on the idea of personal growth and experiences.
+                    Would this work for what you’re aiming to convey? Let me know if you have a particular theme in
+                    mind!
+                </p>
+
             </div>
-            <nav class="navbar ">
-                
-                <div class="menu-toggle " id="mobile-menu">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-                
-                <ul class="nav-links ">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="./components/about.html">About</a></li>
-                    <li><a href="./components/service.html">Services</a></li>
-                    <li><a href="./components/artist.html">Testimonials</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
-                </ul>
-                
-            </nav>
-        </header>
-         <section class="Home">
-            <div class="home-logo">
-                <img src="./images/logo.avif" alt="">
-                <h1>Till Death, We Do Art</h1>
-            </div>
-            <div class="form-container">
-                <div class="form-content">
-                    <h1>Get Your Piercing at a Special Offer: It’s All About Your Passion, Your Journey!</h1>
-                    <p>
-                        This version focuses on the idea of personal growth and experiences.
-                        Would this work for what you’re aiming to convey? Let me know if you have a particular theme in mind!
+
+            <form class="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    <section class="gallery">
+
+    </section>
+    <section class="about">
+        <div class="black-box">
+            <div class="box">
+                <div class="text-left">
+                    <p>At Rebel Tattoos, each piercing is a symbol of your distinct journey <br> and personal experiences.
+                        It captures the essence of your life, <br> highlighting key moments, emotions, and lessons learned.
                     </p>
-                    
                 </div>
-                
-                <form class="contact-form">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
-                    
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                    
-                    <label for="phone">Phone</label>
-                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
-                    
-                    <button type="submit">Submit</button>
-                </form>
+                <div class="logo">
+                    <img src="https://via.placeholder.com/100" alt="Logo">
+                </div>
+                <div class="text-right">
+                    <p>At Rebel Tattoos, your story becomes our canvas. Each piercing we <br> create is a personal
+                        reflection of the journey you've walked, encapsulating the meaningful experiences that define you.
+                    </p>
+                </div>
             </div>
-        </section> 
+        </div>
+    
+        <div class="container">
+            <div class="content">
+                <!-- Image Section - Left Side -->
+                <div class="image">
+                    <img src="images/image00009.jpeg" alt="Square Image">
+                </div>
+    
+                <!-- Text Section - Right Side -->
+                <div class="text">
+                    <h1>"Rebel Against the Ordinary—Express Your Tale with Every Piercing."</h1>
+                    <p>
+                        At Rebel Tattoos, we view each piercing as a bold declaration of your identity. Our skilled artists
+                        excel in customizing piercings that embody your personal style and mark significant milestones in
+                        your life. We're dedicated to transforming your vision into a striking statement of art, celebrating
+                        your individuality through each piece. Whether it's a daring or understated addition, every piercing
+                        we craft is a reflection of your unique journey and the audacious spirit that propels it.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="services-section">
         <h1>Our Services</h1>
         <div class="services-container">
@@ -100,7 +144,9 @@
                 <div class="testimonial-content">
                     <span class="quote-icon">❝</span>
                     <p>
-                        My sister and I went to rebel tattoo for piercings. My sister got her piercing done there. Sonu Sir, the piercing artist, is very humble and knowledgeable. He followed international procedures and provided the best service.
+                        My sister and I went to rebel tattoo for piercings. My sister got her piercing done there. Sonu
+                        Sir, the piercing artist, is very humble and knowledgeable. He followed international procedures
+                        and provided the best service.
                     </p>
                     <h3>Rahul Choudhary</h3>
                 </div>
@@ -109,7 +155,9 @@
                 <div class="testimonial-content">
                     <span class="quote-icon">❝</span>
                     <p>
-                        They are really good. I got both piercing and tattoo. Totally happy with the output. Mind-blowing customer service. Sonu is so comforting. Painless piercing. Harsh is also so focused and sharp with his skills. Thank you, guys! ❤️
+                        They are really good. I got both piercing and tattoo. Totally happy with the output.
+                        Mind-blowing customer service. Sonu is so comforting. Painless piercing. Harsh is also so
+                        focused and sharp with his skills. Thank you, guys! ❤️
                     </p>
                     <h3>Chhaya Sharma</h3>
                 </div>
@@ -118,7 +166,9 @@
                 <div class="testimonial-content">
                     <span class="quote-icon">❝</span>
                     <p>
-                        I had been thinking about getting a nose piercing for quite some time but wasn’t sure where to go. I visited a few jewelers, but their conditions were terrible—no hygiene and no proper techniques.
+                        I had been thinking about getting a nose piercing for quite some time but wasn’t sure where to
+                        go. I visited a few jewelers, but their conditions were terrible—no hygiene and no proper
+                        techniques.
                     </p>
                     <h3>Jannat Tewari</h3>
                 </div>
@@ -211,4 +261,3 @@
 </body>
 
 </html>
-
