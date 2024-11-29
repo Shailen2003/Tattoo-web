@@ -6,12 +6,12 @@
   
   body {
     font-family: Arial, sans-serif;
-    background-color: #000;
+     background-color: #000;
     color: #fff;
     line-height: 1.6;
     margin: 0;
     box-sizing: border-box;
-  }
+
 
 .header {
     background-color: black;
@@ -621,4 +621,217 @@ textarea:focus {
     align-items:center;
     justify-content:center;
     display: flex;
+}
+/* If you are using Google Fonts for Nimbus Sans, remove the @font-face block */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nimbus Sans', sans-serif; /* Use Google font Nimbus Sans */
+    height: 100%; /* Ensure body takes full height */
+    width: 100%; /* Ensure full width */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.black-box {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px; /* Set a fixed height for the black box */
+    background-color: black; /* Dark background */
+    width: 100%; /* Full width */
+    color: white;
+    box-sizing: border-box;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between; /* Spread left and right text apart */
+    align-items: center;
+    width: 100%; /* Full width */
+    height: 100%; /* Fill the entire box */
+    color: white;
+    padding: 1px;
+    box-sizing: border-box;
+}
+
+.text-left {
+    flex: 1;
+    text-align: left; /* Left-aligned text */
+    padding-left: 10px; /* Optional padding to move it further from the edge */
+}
+
+.text-left p {
+    font-size: 15px;
+    margin-left: 0px; /* Reset margin */
+    padding-left: 43px; /* Move text further from the edge */
+}
+
+.text-right {
+    flex: 1;
+    text-align: right; /* Right-aligned text */
+    padding-right: 10px; /* Optional padding to move it further from the edge */
+}
+
+.text-right p {
+    font-size: 15px;
+    margin-right: 67px; /* Align paragraph without margin from right */
+    padding-right: 4px; /* Move text further from the edge */
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 110px; /* Logo size */
+    height: auto;
+}
+
+/* Main container */
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /* Stack elements vertically on mobile */
+    height: 100%; /* Full screen height */
+    width: 100%; /* Full screen width */
+    background-image: url('https://via.placeholder.com/800x600');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    box-sizing: border-box;
+    overflow-y: auto; /* Allow vertical scrolling */
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%; /* Full width */
+    height: auto; /* Adjust height for responsive behavior */
+    flex-wrap: wrap; /* Allow elements to wrap on small screens */
+    box-sizing: border-box;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 0px;
+    box-sizing: border-box;
+    margin-right: 20px; /* Space between image and text */
+}
+
+.image img {
+    width: 100%; /* Image scales with container */
+    margin-top: 20px;
+    max-width: 450px; /* Maximum width for large screens */
+    height: 430px; /* Maintain aspect ratio */
+    border-radius: 5px;
+    object-fit: cover;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.6); /* White shadow effect */
+}
+
+.text {
+    max-width: 55%; /* Adjusts width proportionally */
+    margin-bottom: 75px;
+    flex: 1;
+    padding: 40px; /* Add padding for readability */
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    align-items: center; /* Vertically align text */
+}
+
+.text h1 {
+    color: black;
+    font-family: 'Nimbus Sans', Arial, sans-serif; /* Use Nimbus Sans */
+    margin: 0; /* Remove margin to align items closely */
+    padding: 10px 10px 10px 0; /* Adjust padding for spacing */
+    font-size: 2.6rem; /* Adjusted heading size */
+    font-weight: bold; /* Increased boldness */
+    border-bottom: 2px solid white; /* Underline */
+    display: inline-block;
+    line-height: 1.2; /* Adjust height for better spacing */
+}
+
+.text p {
+    margin: 0 0 0 15px; /* Add margin-left to separate paragraph from h1 */
+    line-height: 1.8; /* Better paragraph readability */
+    text-align: justify;
+    font-size: 1rem;
+    color: black;
+    flex-grow: 1; /* Allow paragraph to take remaining space */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .content {
+        flex-direction: column; /* Stack elements vertically */
+        text-align: center; /* Center align content */
+        height: auto; /* Allow height to adjust */
+        padding: 15px;
+    }
+
+    .text {
+        max-width: 100%;
+        padding: 10px;
+        display: block; /* Stack elements vertically on smaller screens */
+    }
+
+    .text h1 {
+        font-size: 2.5rem; /* Adjust for tablets */
+        margin-bottom: 10px;
+    }
+
+    .image {
+        margin-top: 20px;
+    }
+
+    .image img {
+        max-width: 280px; /* Slightly smaller image */
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .text {
+        padding: 10px;
+        display: block; /* Stack elements vertically on smaller screens */
+    }
+
+    .text h1 {
+        font-size: 2rem; /* Smaller heading for smaller screens */
+    }
+
+    .text p {
+        font-size: 0.9rem; /* Smaller text for readability */
+    }
+
+    .image img {
+        max-width: 200px; /* Smaller image */
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .text h1 {
+        font-size: 1.5rem; /* Further reduce heading size */
+    }
+
+    .text p {
+        font-size: 0.8rem; /* Smaller paragraph font */
+    }
+
+    .image img {
+        max-width: 150px; /* Reduce image size further */
+        height: auto;
+    }
 }
