@@ -81,7 +81,9 @@
     text-decoration: underline;
     border: none;
  }
- 
+ .logo{
+  display: flex;
+ }
  
  .bttn a:hover{
     background-color:white;
@@ -146,14 +148,18 @@
 
     }
 
-    .nav-links.active {
+    .nav-links.active {  
         display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0 150px;
     }
 
-    .menu-toggle {
-        display: flex;
-        flex-direction: column;
-        cursor: pointer;
+    .menu-toggle {   
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
     }
 
     .bttn {
@@ -164,6 +170,7 @@
         margin: 10px 0;
         text-align: center;
     }
+    
 }
 
 .form-container {
