@@ -24,9 +24,9 @@ mobileMenu.addEventListener('click', () => {
   }
 
   if (mobileMenu.style.paddingLeft === '250px' ) {
-    mobileMenu.style.paddingLeft === '20';
+    mobileMenu.style.paddingLeft === '195px';
   } else {
-    mobileMenu.style.paddingLeft = '250px';
+    mobileMenu.style.paddingLeft = '100px';
   }
 });
 document.querySelector('.contact-btn').addEventListener('click', () => {

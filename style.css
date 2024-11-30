@@ -38,7 +38,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
   background-color: var(--light-blue);
   color: #fff;
   transition: height 0.3s ease-in-out;
