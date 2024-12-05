@@ -772,18 +772,53 @@ textarea:focus {
 .content{
   display: grid;
   grid-template-columns: auto auto;
+  grid-template-rows: 300px;
 }
 .image-sec{
-  height: 200px;
-  width: 200px;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
 }
+.image-sec img {
+  height: 350px;
+  width: 330px;
+}
+.heading-text{
+  grid-column: 2/3;
+  padding: 50px 10px 0px 10px;
+  margin: 80px 20px 0px 20px;
+  font-size: 2rem;
+}
+.paragraph-text{
+  grid-column: 2/3;
+  margin: 10px;
+}
+
 @media (max-width: 600px){
+  .content{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 100px;
+  }
+  .image-sec{
+    grid-column: 2;
+  }
   .image-sec img {
     position: relative;
     top: 0;
     height: 100px;
     width: 150px;
-}}
+}
+.heading-text{
+  grid-column: 1;
+  font-size: 0.1rem;
+}
+.paragraph-text{
+  grid-column: 1;
+  margin: 10px;
+}
+}
 
 .rebel-container {
   display: flex;
