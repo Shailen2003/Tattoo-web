@@ -23,7 +23,7 @@ mobileMenu.addEventListener('click', () => {
     homeDiv.style.paddingTop = '276px';
   }
 
-  if (mobileMenu.style.paddingLeft === '250px' ) {
+  if (mobileMenu.style.paddingLeft === '250px' || mobileMenu.style.paddingLeft === '100px' ) {
     mobileMenu.style.paddingLeft === '195px';
   } else {
     mobileMenu.style.paddingLeft = '100px';
